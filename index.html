@@ -1,21 +1,193 @@
-# ASRA TRADERS (Al Zainab Printers)
+index.html
+services.html
+about.html
+style.css
 
-Official website for ASRA TRADERS, a professional printing service provider based in Hyderabad, Pakistan.
+/images/
+   logo.png
+   hero.jpg
+   printer.jpg
+   gto.jpg
+   battery-box.jpg
 
-##  (Services)
-- Visiting Cards
-- Cash Memo Printing
-- Firm Packages
-- Custom Printing Solutions
-- QR Code Printing
+👉 Images tum upload kar dena (ya jo hain woh use kar lo)
 
-## About us
-We provide high-quality and affordable printing solutions for businesses and individuals. Our goal is to deliver fast, reliable, and professional services.
+🏠 1. HOME PAGE (index.html)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asra Traders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-## Location
-Asra Traders Hyderabad, 99Q9+558, Khokar Muhallah Shahi Bazar, Hyderabad, Pakistan
-contact now 
-    0334-8084900
-## Tech Used
-- HTML
-- CSS
+<header>
+    <h1>ASRA TRADERS</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Services</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Professional Printing Solutions</h2>
+    <p>High quality printing in Hyderabad</p>
+    <a class="btn" href="https://wa.me/923340804900">WhatsApp Now</a>
+</section>
+
+<h2>Our Work Gallery</h2>
+<div class="gallery">
+    <img src="images/printer.jpg">
+    <img src="images/gto.jpg">
+    <img src="images/battery-box.jpg">
+</div>
+
+<footer>
+    <p>📍 Hyderabad | 📞 0334-8084900</p>
+</footer>
+
+<a href="https://wa.me/923340804900" class="whatsapp">💬</a>
+
+</body>
+</html>
+🧾 2. SERVICES PAGE (services.html)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services - Asra Traders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Services</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Services</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<div class="services">
+    <div>Visiting Cards</div>
+    <div>Cash Memo Printing</div>
+    <div>Firm Packages</div>
+    <div>QR Code Printing</div>
+    <div>Custom Designs</div>
+</div>
+
+<footer>
+    <p>ASRA TRADERS - All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/923340804900" class="whatsapp">💬</a>
+
+</body>
+</html>
+👤 3. ABOUT PAGE (about.html)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Services</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<p class="about">
+ASRA TRADERS (Al Zainab Printers) Hyderabad based printing company.
+We provide high quality and affordable printing services.
+</p>
+
+<footer>
+    <p>Contact: 0334-8084900</p>
+</footer>
+
+<a href="https://wa.me/923340804900" class="whatsapp">💬</a>
+
+</body>
+</html>
+🎨 4. DESIGN (style.css)
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: #0b1c2c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: orange;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('images/hero.jpg');
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.btn {
+    background: orange;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 30%;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.services div {
+    background: #eee;
+    padding: 20px;
+}
+
+.about {
+    padding: 20px;
+}
+
+footer {
+    background: #0b1c2c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
